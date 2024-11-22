@@ -1,0 +1,77 @@
+#header {
+    display: flex;
+    justify-content: space-between; /* Aligns logo left, navbar right */
+    align-items: center; /* Aligns items vertically in the middle */
+    padding: 10px 20px;
+    background: linear-gradient(270deg,  #ce2968, #FF8B00, #ff0303);
+    background-size: 600% 600%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: gradientAnimation 5s ease infinite; /* Applying the animation */
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#header .logo {
+    max-width: 200px !important; /* Adjust the size as needed */
+    height: auto !important; /* Keeps the aspect ratio */
+}
+
+#navbar {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding-right: 150px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #004AAD;
+}
+
+#search-bar {
+    margin-left: 20px;
+}
+
+#search-bar input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    width: 200px;
+}
+
+#search-bar button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.cart-icon {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: #004AAD;
+}
